@@ -15,6 +15,9 @@
 		06541A5F1D2F7FBB007D6B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06541A5D1D2F7FBB007D6B1E /* LaunchScreen.storyboard */; };
 		06541A6A1D2F7FBC007D6B1E /* RuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06541A691D2F7FBC007D6B1E /* RuntimeDemoTests.m */; };
 		06541A751D2F7FBC007D6B1E /* RuntimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06541A741D2F7FBC007D6B1E /* RuntimeDemoUITests.m */; };
+		06541A841D2F8054007D6B1E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 06541A831D2F8054007D6B1E /* Person.m */; };
+		06541A881D2F8CB9007D6B1E /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 06541A871D2F8CB9007D6B1E /* UIImage+image.m */; };
+		06541A8B1D2FA25F007D6B1E /* Person1.m in Sources */ = {isa = PBXBuildFile; fileRef = 06541A8A1D2FA25F007D6B1E /* Person1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		06541A701D2F7FBC007D6B1E /* RuntimeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06541A741D2F7FBC007D6B1E /* RuntimeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemoUITests.m; sourceTree = "<group>"; };
 		06541A761D2F7FBC007D6B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06541A821D2F8054007D6B1E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		06541A831D2F8054007D6B1E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		06541A851D2F8742007D6B1E /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		06541A861D2F8CB9007D6B1E /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		06541A871D2F8CB9007D6B1E /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		06541A891D2FA25F007D6B1E /* Person1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person1.h; sourceTree = "<group>"; };
+		06541A8A1D2FA25F007D6B1E /* Person1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,10 @@
 		06541A431D2F7FBB007D6B1E = {
 			isa = PBXGroup;
 			children = (
+				06541A821D2F8054007D6B1E /* Person.h */,
+				06541A831D2F8054007D6B1E /* Person.m */,
+				06541A891D2FA25F007D6B1E /* Person1.h */,
+				06541A8A1D2FA25F007D6B1E /* Person1.m */,
 				06541A4E1D2F7FBB007D6B1E /* RuntimeDemo */,
 				06541A681D2F7FBC007D6B1E /* RuntimeDemoTests */,
 				06541A731D2F7FBC007D6B1E /* RuntimeDemoUITests */,
@@ -105,6 +119,9 @@
 				06541A531D2F7FBB007D6B1E /* AppDelegate.m */,
 				06541A551D2F7FBB007D6B1E /* ViewController.h */,
 				06541A561D2F7FBB007D6B1E /* ViewController.m */,
+				06541A861D2F8CB9007D6B1E /* UIImage+image.h */,
+				06541A871D2F8CB9007D6B1E /* UIImage+image.m */,
+				06541A851D2F8742007D6B1E /* Runtime.h */,
 				06541A581D2F7FBB007D6B1E /* Main.storyboard */,
 				06541A5B1D2F7FBB007D6B1E /* Assets.xcassets */,
 				06541A5D1D2F7FBB007D6B1E /* LaunchScreen.storyboard */,
@@ -270,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06541A8B1D2FA25F007D6B1E /* Person1.m in Sources */,
 				06541A571D2F7FBB007D6B1E /* ViewController.m in Sources */,
 				06541A541D2F7FBB007D6B1E /* AppDelegate.m in Sources */,
+				06541A881D2F8CB9007D6B1E /* UIImage+image.m in Sources */,
+				06541A841D2F8054007D6B1E /* Person.m in Sources */,
 				06541A511D2F7FBB007D6B1E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zyh.RuntimeDemo;
@@ -424,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zyh.RuntimeDemo;
